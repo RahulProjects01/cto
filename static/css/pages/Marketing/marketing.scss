@@ -1,0 +1,198 @@
+.Market{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Helvetica';
+
+    .mar-heading{
+        position: absolute;
+        height: 13%;
+        width: 25%;
+        font-size: 5vw;
+        display: flex;
+        color:white;
+        justify-content: center;
+        align-items: center;
+        left:5%;
+        top:10%;
+        // background-color: red;
+    }
+
+    .mar-video-div{
+        position: absolute;
+        height: 60%;
+        width: 35%;
+        left:6%;
+        top:30%;
+        border: 1px solid white;
+        border-radius: 1.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .mar-video-1{
+            position: absolute;
+            top:0%;
+            height: 100%;
+            width: auto;
+            border-radius: 1.5vw;
+        }
+        .mar-video-2{
+            position: absolute;
+            bottom:-65%;
+            height: 220%;
+            width: auto;
+            border-radius: 1.5vw;
+        }
+
+    }
+
+    .mar-image-1-div{
+        position: absolute;
+        height: 26%;
+        width: 15%;
+        left: 43%;
+        top:30%;
+        border-radius: 1.7vw;
+        border:1px solid white;
+        overflow: hidden;
+        
+        .mar-img-1{
+            position: absolute;
+            left:0%;
+            height: 100%;
+            width: 100%;
+            // border-radius: 1.5vw;
+        }
+    }
+
+    .mar-image-2-div{
+        position: absolute;
+        height: 26%;
+        width: 10%;
+        left: 60%;
+        top:30%;
+        border-radius: 1.7vw;
+        border:1px solid white;
+        overflow: hidden;
+        
+        .mar-img-2{
+            position: absolute;
+            left:0%;
+            height: 100%;
+            width: 100%;
+            // border-radius: 1.5vw;
+        }
+    }
+
+    .mar-image-3-div{
+        position: absolute;
+        height: 30%;
+        width: 27%;
+        left: 43%;
+        top:60%;
+        border-radius: 2.3vw;
+        border:1px solid white;
+        overflow: hidden;
+        
+        .mar-img-3{
+            position: absolute;
+            left:0;
+            height: 100%;
+            width: 100%;
+            // border-radius: 1.5vw;
+        }
+    }
+
+    .mar-vertical-div{
+        position: absolute;
+        height: 60%;
+        width: 0.1%;
+        right:25%;
+        bottom: 10%;
+        background-color: white;
+    }
+
+    .mar-circular-dot{
+        position: absolute;
+        height: 2.2%;
+        width: 1.2%;
+        right:24.5%;
+        top:30%;
+        border-radius: 2.5vw;
+        background-color: white;
+    }
+
+    .mar-cursor{
+        position: absolute;
+        height: 5%;
+        right: 8%;
+        top: 50%;
+        width: auto;
+        animation: jiggleCursor 0.8s infinite ;
+    }
+
+    .mar-menu-flow{
+        position: absolute;
+        height: 68%;
+        width: 15%;
+        right:9%;
+        top:27%;
+        font-size: 1.3vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // background-color: yellow;
+
+        .mar-menu-1{
+            // background-color: red;
+            height: 10%;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            z-index: 1;
+            border-radius: 1vw;
+            transition:  0.1s ease-out;
+        }
+
+    }
+    
+    .mar-moving-div{
+        background-color: #BD1643;
+        position: absolute;
+        height: 8%;
+        width: 14%;
+        right:10%;
+        top:26.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1vw;
+        z-index: 0;
+    }
+}
+
+@keyframes jiggleCursor {
+    // 0% {
+    //     transform: translateY(0%);
+    // }
+    // 50% {
+    //     transform: translateY(-10%);
+    // }
+    // 100% {
+    //     transform: translateY(0%);
+    // }
+             0%{ transform: translateY(0%);}
+
+            25%{transform:translateY(-25%)}
+            50%{transform: translateY(25%);}
+            100%{transform: translate(0);}
+}

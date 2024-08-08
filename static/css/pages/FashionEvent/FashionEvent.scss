@@ -1,0 +1,163 @@
+.FE{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Helvetica Neue";
+
+    .fe-top-div{
+        position: absolute;
+        top: 0;
+        height: 23%;
+        width: 100%;
+        // background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fe-top-left-txt-1{
+            position: absolute;
+            font-size: 2.5vw;
+            font-weight: 1000;
+            left: 5%;
+            top: 20%;
+            color: black;
+            text-transform: uppercase;
+        }
+        .fe-top-left-txt-2{
+            position: absolute;
+            font-size: 2.5vw;
+            font-weight: 100;
+            left: 5%;
+            top: 48%;
+            color: black;
+            text-transform: uppercase;
+        }
+        .fe-top-right-txt-1{
+            position: absolute;
+            font-size: 3.5vw;
+            font-weight: 1000;
+            right: 5%;
+            top: 20%;
+            color: black;
+            text-transform: uppercase;
+        }
+        .fe-top-right-txt-2{
+            position: absolute;
+            font-size: 3.5vw;
+            font-weight: 1000;
+            right: 5%;
+            top: 48%;
+            color: black;
+            text-transform: uppercase;
+        }
+
+    }
+.fe-center-div-main{
+    position: absolute;
+    width: 200%;
+    // width: 100%;
+    height: 70%;
+    top: 5.6%;
+    left: -2.8%;
+    overflow: hidden;
+    display: flex;
+    .fe-center-div{
+        position: relative;
+        height: 58%;
+        width: 100%;
+        top:18.5%;
+        // gap:5vw;
+        // background-color: green;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // background-color: red;
+        animation: infiniteAnim1 15s linear infinite forwards;
+        // border:1px solid red;
+
+        .img-slider{
+                // overflow: hidden;
+                width: 20%;
+                height: 100%;
+                    // gap:10vw;
+                // display: flex;
+                // justify-content: space-around;
+                // align-items: center;
+                border-radius: 0.5vw;
+                  img {
+                    min-width: 100%;
+                    height: 100%;
+                    border-radius: 0.2vw;
+                    filter: grayscale(20%);
+                    transition: 1.2s ease-out;
+        
+                    // &:hover {
+                    //   filter: grayscale(0%);
+                    //   transform: scale(1.01);
+                    // }
+                  }
+        }
+        
+    }
+}
+
+    .fe-bottom-div{
+        position: absolute;
+        bottom: 0;
+        height: 24%;
+        width: 100%;
+
+        // background-color: rgba(255, 0, 0, 0.529);
+
+        .fe-bottom-txt-0{
+            position: absolute;
+            font-size: 4vw;
+            font-style: bold;
+            font-weight: 1000;
+            top:-7%;
+            left:45%;
+            text-transform: uppercase;
+        }
+        .fe-bottom-txt-1{
+            position: absolute;
+            font-size: 4vw;
+            font-style: bold;
+            font-weight: 1000;
+            top:23%;
+            left:47%;
+            text-transform: uppercase;
+        }
+        .fe-bottom-txt-2{
+            position: absolute;
+            font-size: 1.5vw;
+            font-weight: 100;
+            top:60%;
+            left:45%;
+            text-transform: uppercase;
+        }
+
+        .fe-bottom-txt-3{
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20%;
+            left:20%;
+            width: 60%;
+            color:white;
+            background-color: black;
+        }
+    }
+}
+
+@keyframes infiniteAnim1 {
+    100% {
+    //   transform: translateX(-94.25vw);
+      transform: translateX(-117.5vw);
+    }
+  }

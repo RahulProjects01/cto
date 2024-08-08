@@ -1,0 +1,115 @@
+.GTM{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+    font-family: "Helvetica Neue";
+
+    .gtm-heading-div{
+        position: absolute;
+        height: 13%;
+        width: 40%;
+        top:5%;
+        left:10%;
+        color:white;
+        text-align: left;
+        // background-color: rgba(255, 255, 0, 0.393);
+
+        .gtm-heading{
+            position: absolute;
+            font-size: 3vw;
+            font-weight: 100;
+        }
+
+        .gtm-heading-txt{
+            position: absolute;
+            font-size: 1.2vw;
+            bottom: 0;
+            left: 0;
+            opacity: 0.7;
+        }
+    }
+
+    .gtm-image-1{
+        position: absolute;
+        height: 20%;
+        width: auto;
+        left:10%;
+        top: 20%;
+        z-index: 1;
+        transition: 1s ease-out;
+    }
+    .gtm-image-2{
+        position: absolute;
+        height: 20%;
+        width: auto;
+        top: 38%;
+        left: 18%;
+        z-index: 1;
+        transition: 1s ease-out;
+    }
+    .gtm-image-3{
+        position: absolute;
+        height: 20%;
+        width: auto;
+        top: 56%;
+        left:10%;
+        z-index: 1;
+        transition: 1s ease-out;
+    }
+    .gtm-image-4{
+        position: absolute;
+        height: 20%;
+        width: auto;
+        top: 74%;
+        left: 18%;
+        z-index: 1;
+        transition: 1s ease-out;
+    }
+
+    .gtm-image-txt-div{
+        position: absolute;
+        height: 13%;
+        width: 70%;
+        // top:23.5%;
+        border-radius: 1.2vw;
+        z-index: 0;
+        background-color: #230009;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        flex-direction: column;
+        transition: 1s ease-out;
+
+        .gtm-box-div{
+            position: absolute;
+            height: 70%;
+            width: 90%;
+            left:8%;
+            top:15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 100;
+            // background-color: rgba(255, 255, 0, 0.581);
+
+            .gtm-box-text{
+                position: absolute;
+                left: 5%;
+                font-size: 1.4vw;
+                text-transform: uppercase;
+            }
+
+            .gtm-box-list{
+                position: absolute;
+                font-size: 1.2vw;
+            }
+
+        }
+    }
+}

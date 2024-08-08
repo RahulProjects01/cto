@@ -1,0 +1,187 @@
+.Prob{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+
+    .prob-heading-txt{
+        position: absolute;
+        height: 30%;
+        width: 100%;
+        left: 1.5%;
+        top:0;
+        color: transparent;
+        display: flex;
+        font-size: 18vw;
+        font-weight: 1000;
+        letter-spacing: 3.5vw;
+        -webkit-text-stroke: 2px white;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.5;
+        // background-color: rgba(255, 255, 0, 0.285);
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        // font-family: 'Helvetica';
+    }
+
+    .prob-image-div{
+        position: absolute;
+        height: 100%;
+        width: 40%;
+        left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s ease-out;
+        // background-color: rgba(255, 255, 0, 0.32);
+
+        .prob-img-1{
+            position: absolute;
+            width: auto;
+            height: 100%;
+            left:5%;
+            transition: 1s ease-out;
+            
+        }
+        .prob-img-2{
+            position: absolute;
+            width: auto;
+            height: 100%;
+            left:5%;
+            transform: translateX(0);
+            opacity: 0;
+            transition: 1s ease-out;
+        }
+        .prob-img-3{
+            position: absolute;
+            width: auto;
+            height: 100%;
+            transform: translateX(-100%);
+            left:5%;
+            transition: 1s ease-out;
+        }
+    }
+
+    .prob-quotes{
+        position: absolute;
+        height: 10%;
+        width: auto;
+        top:30%;
+        right: 12%;
+    }
+
+    .prob-num-div{
+        position: absolute;
+        height: 8%;
+        width: 4%;
+        top:40%;
+        left: 53%;
+        font-weight: 700;
+        font-size: 3.3vw;
+        transition: 0.5s;
+        color:#ADADAD;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        // background-color: red;
+    }
+
+    .prob-content-div{
+        position: absolute;
+        height: 59%;
+        width: 26%;
+        right: 17%;
+        bottom: 5%;
+        border-radius: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        // letter-spacing: 0vw;
+        // background-color: rgba(255, 255, 255, 0.422);
+        background: linear-gradient(180deg, rgba(173,173,173,1) 36%, rgba(0,0,0,1) 100%);
+        // transition: 1s ease-out;
+
+        .prob-con-para-1{
+            position: absolute;
+            font-size: 2vw;
+            color:white;
+            top:10%;
+        }
+
+        .prob-con-para-2{
+            position: absolute;
+            font-size: 1.2vw;
+            top:22%;
+            left: 11%;
+            text-align: left;
+            height: 40%;
+            width: 77%;
+            color:black;
+            // font-weight: 500;
+            // background-color: rgba(255, 0, 0, 0.352);
+        }
+    }
+
+    .prob-nav-div{
+        position: absolute;
+        height: 4%;
+        width: 12%;
+        bottom: 4%;
+        right:24%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.635);
+
+        .prob-nav-dot-1{
+            position: absolute;
+            height: 30%;
+            width: 5%;
+            transition: 0.5s;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .prob-nav-dot-2{
+            position: absolute;
+            height: 30%;
+            width: 5%;
+            left:37%;
+            transition: 0.5s;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .prob-nav-dot-3{
+            position: absolute;
+            height: 30%;
+            width: 5%;
+            right:37%;
+            transition: 0.5s;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .prob-arrow-1{
+            position: absolute;
+            height: 100%;
+            width: auto;
+            left:10%;
+            cursor: pointer;
+        }
+        .prob-arrow-2{
+            position: absolute;
+            height: 100%;
+            width: auto;
+            right:10%;
+            cursor: pointer;
+        }
+    }
+}

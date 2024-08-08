@@ -1,0 +1,104 @@
+.Home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Lucida Grande';
+    font-style: normal;
+    
+    .home-img-1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-img-2{
+        position: absolute;
+        width: auto;
+        height: 87%;
+        top:16%;
+        left:43%;
+    }
+
+    .home-style-txt{
+        position: absolute;
+        width: 7%;
+        height: 9%;
+        top:27%;
+        left:9.5%;
+        font-size: 1.5vw;
+        font-weight: 700;
+        color:#D08F43;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Dulan Anzelica';
+        // background-color: aquamarine;
+    }
+
+    .home-txt-container{
+        position: absolute;
+        height: 13%;
+        width: 75%;
+        left: 9.5%;
+        top:36%;
+        font-size: 8vw;
+        font-weight: 700;
+        color:white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        // background-color: rgba(255, 255, 0, 0.546);
+
+        .h-txt-c-span{
+            position: absolute;
+            color:transparent;
+            -webkit-text-stroke: 2px white;
+            // top:5%;
+            right: 0;
+            font-size: 8vw;
+        }
+    }
+
+    .home-desc-txt{
+        position: absolute;
+        height: 10%;
+        width: 40%;
+        right:12%;
+        bottom: 38%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 50;
+        font-size: 1.2vw;
+        text-align: right;
+        opacity: 0.8;
+        line-height: 1.7vw;
+        // background-color: #D08F43;
+    }
+
+    .home-date-div{
+        position: absolute;
+        height: 7%;
+        width: 15.5%;
+        background-color: #D08F43;
+        right:11.5%;
+        bottom: 29%;
+        color:white;
+        display: flex ;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 2vw;
+        font-weight: 700;
+        font-style: italic;
+        text-shadow: 2px 2px #000;
+    }
+
+    
+}

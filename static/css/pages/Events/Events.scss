@@ -1,0 +1,95 @@
+.Events {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Helvetica Neue";
+    background-color: #02031B;
+
+
+    .event-top-div {
+        position: absolute;
+        height: 20%;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5vw;
+        font-weight: 1000;
+        color: #BD1643;
+        top: 0;
+        left: 0;
+        // background-color: rgba(0, 128, 0, 0.755);
+    }
+
+    .event-main {
+        display: flex;
+        position: absolute;
+        justify-content: flex-start;
+        // background-color: rgba(255, 255, 0, 0.503);
+        top:18%;
+        height: 75%;
+        min-width: 100%;
+       
+
+        .img-slider {
+          // position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 1.5vw;
+            animation: infiniteAnim 15s linear infinite forwards;
+          
+              .img-sec {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                border-radius: 0.5vw;
+                  img {
+                    min-width: 100%;
+                    height: 100%;
+                    //   object-fit: cover;
+                    border-radius: 0.2vw;
+                    filter: grayscale(20%);
+                    transition: 0.2s ease-out;
+                    transform: scale(1.1);
+        
+                    &:hover {
+                      filter: grayscale(0%);
+                      transform: scale(1.2);
+                    }
+                  }
+              }
+            .event-slide-img-3{
+              position: absolute;
+              height: 100%;
+              width: auto;
+              left:9.7%;
+              bottom:-10%;
+            }
+            .event-slide-img-3-2{
+              position: absolute;
+              height: 100%;
+              width: auto;
+              left:60%;
+              bottom:-10%;
+            }
+        }
+
+    }
+
+}
+
+@keyframes infiniteAnim {
+    100% {
+      transform: translateX(-117vw);
+    }
+  }

@@ -1,0 +1,782 @@
+.bm-sr-cover {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    // overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // overflow: hidden;
+    // background-color: green;
+
+    // .inner-section{
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100vh;
+    //     background-color: #fff000;
+    // }
+
+    .bm-stickyroll{
+        width: 100%;
+        // overflow: visible;
+        // .inner-section{
+        //     position: fixed;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100vh;
+        //     background-color: #fff000;   
+        // }
+
+        .BM{
+            position: relative ;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-color: black;
+            font-family: "Helvetica Neue";
+            color:white;
+            // flex-direction: column;
+
+            .bm-heading{
+                position: absolute;
+                font-size: 3.5rem;
+                top:12%;
+                left:9.5%;
+                font-weight: 100;
+                // background-color: chocolate;
+            }
+
+            .bm-anim-bttns{
+                position: absolute;
+                height: 8%;
+                width: 30%;
+                bottom: 15%;
+                left: 23%;
+                // border:1px solid white;
+
+                .bm-anim-bttn-img{
+                    position: absolute;
+                    width: 12%;
+                    height: auto;
+                    cursor: pointer;
+                    // left: 0;
+                    z-index: 2;
+                    object-fit: contain;
+
+                }
+
+                .bm-anim-btn-bars{
+                    position: absolute;
+                    height: 50%;
+                    width: 70%;
+                    left: 15%;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    transition: 1s ease-out;
+                    // border: 1px solid white;
+                    
+
+                    .bm-anim-btn-bar-1{
+                        position: relative;
+                        height: 30%;
+                        width: 20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50vw;
+                        background-color: grey;
+                        transition: 0.5s ease-out;
+                    }
+                    .bm-anim-btn-bar-2{
+                        position: relative;
+                        height: 30%;
+                        width: 20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50vw;
+                        background-color: grey;
+                        transition: 0.5s ease-out;
+                    }
+                    .bm-anim-btn-bar-3{
+                        position: relative;
+                        height: 30%;
+                        width: 20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50vw;
+                        background-color: grey;
+                        transition: 0.5s ease-out;
+                    }
+                }
+            }
+
+            .bm-menu-design{
+                position: absolute;
+                height: 65%;
+                width: 30%;
+                left:-25%;
+                border-radius: 50%;
+                border:2px solid white;
+                transition: 1.5s ease-out;
+
+                .bm-menu-dot1{
+                    position: absolute;
+                    height: 6%;
+                    width: 6.5%;
+                    right: 1%;
+                    top:25%;
+                    border-radius: 50vw;
+                    background-color: white;
+                }
+                .bm-menu-dot2{
+                    position: absolute;
+                    height: 6%;
+                    width: 6.5%;
+                    right: 1%;
+                    bottom: 25%;
+                    border-radius: 50vw;
+                    background-color: white;
+                }
+                .bm-menu-dot3{
+                    position: absolute;
+                    height: 6%;
+                    width: 6.5%;
+                    right: 11%;
+                    bottom: 26%;
+                    top:12%;
+                    border-radius: 50vw;
+                    background-color: white;
+                    // opacity: 0.7
+                }
+                .bm-menu-dot4{
+                    position: absolute;
+                    height: 6%;
+                    width: 6.5%;
+                    right: 10%;
+                    bottom: 25%;
+                    bottom:12%;
+                    border-radius: 50vw;
+                    background-color: white;
+                    // opacity: 0.7;
+                }
+
+                .bm-menu-dot5{
+                    position: absolute;
+                    height: 6%;
+                    width: 6.5%;
+                    right: -3.5%;
+                    top:49%;
+                    border-radius: 50vw;
+                    background-color: white;
+                }
+                .bm-menu-dot6{
+                    position: absolute;
+                    height: 6%;
+                    width: 6.5%;
+                    right: 24%;
+                    bottom:2%;
+                    border-radius: 50vw;
+                    background-color: white;
+                    // opacity: 0.7;
+                }
+                .bm-menu-dot7{
+                    position: absolute;
+                    height: 6%;
+                    width: 6.5%;
+                    right: 39%;
+                    bottom:-3.5%;
+                    border-radius: 50vw;
+                    background-color: white;
+                    // opacity: 0.7;
+                }
+            }
+
+            .bm-menu-red-dot{
+                position: absolute;
+                height: 7%;
+                width: 3.5%;
+                left: 3.2%;
+                top:48%;
+                border-radius: 50vw;
+                background-color: #eb114bb8;
+                transition: 0.5s ease-out ;
+                // animation: blink 1s infinite;
+            }
+            @keyframes blink {
+                0% {opacity: 1;}
+                50% {opacity: 0;}
+                100% {opacity: 1;}
+            }
+
+
+            // -----------------------------------------------------------------------
+            .bm-right-img-1{
+                position: absolute;
+                height: 40%;
+                width: auto;
+                top:-17%;
+                right: 12%;
+            }
+            .bm-right-img-2{
+                position: absolute;
+                height: 40%;
+                width: auto;
+                left: 5%;
+                top:8%;
+
+            }
+            .bm-right-img-3{
+                position: absolute;
+                height: 45%;
+                width: 40%;
+                right:12%;
+                top:23.5%;
+            }
+            .bm-right-img-4{
+                position: absolute;
+                height: 40%;
+                width: auto;
+                left:5%;
+                bottom:10%;
+            }
+            .bm-right-img-5{
+                position: absolute;
+                height: 40%;
+                width: auto;
+                bottom: -10%;
+                right:12%;
+            }
+
+            .bm-main-left-div{
+                position: absolute;
+                height: 50%;
+                width: 50%;
+                top:25%;
+                left:10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // background-color: rgba(172, 255, 47, 0.568);
+
+                .bm-main-l-top{
+                    position: absolute;
+                    height: 80%;
+                    width: 100%;
+                    top:0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .bm-main-l-t-text-1{
+                        position: absolute;
+                        font-size: 2.5vw;
+                        font-weight: 700;
+                        left: 0;
+                        text-transform: uppercase;
+                        top:5%;
+                    }
+
+                    .bm-main-l-t-text-2{
+                        position: absolute;
+                        font-size: 1.4vw;
+                        text-align: left;
+                        font-weight: 100;
+                    }
+                }
+            }
+
+            .bm-main-right-div{
+                position: absolute;
+                height: 100%;
+                width: 35%;
+                // top:25%;
+                right:0;
+                // background-color: rgba(255, 69, 0, 0.568);
+            }
+
+
+            //------------------------------------------------------------------------
+
+            .bm-button-1{
+                position: absolute;
+                height: 10%;
+                width: 15%;
+                top:60%;
+                left: 10%;
+                // box-shadow: 6px 1px 5px 6px #ccc;
+            }
+
+            .bm-button-2{
+                position: absolute;
+                height: 10%;
+                width: 15%;
+                top:60%;
+                left: 30%;
+            }
+            .bm-button-3{
+                position: absolute;
+                height: 10%;
+                width: 15%;
+                top:60%;
+                left: 50%;
+            }
+
+            .bm-main-div{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top:1%;
+                transition: all 2s ease-in-out;
+                // background-color: rgba(172, 255, 47, 0.397);
+                .bm-button-i-div{
+                    position: absolute;
+                    height: 8%;
+                    width: 10%;
+                    top:61%;
+                    left: 12%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 1.2vw;
+                    cursor: pointer;
+
+                    overflow: hidden;
+                    // background-color: rgba(255, 0, 0, 0.329);
+
+                    .bm-bttn-txt{
+                        position: absolute;
+                        font-size: 1vw;
+                        width: 10%;
+                        left: 0;
+                    }
+
+                    .bm-money{
+                        position: absolute;
+                        height: 600%;
+                        font-size: 2vw;
+                        right:0;
+                        color: #D20A3F;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        transform: translateY(45%);
+                        transition: 1.7s ease-out;
+                        // background-color: rgba(255, 0, 0, 0.26);
+                        .bm-m-s-money{
+                            position: relative;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            font-size: inherit;
+                            color: inherit;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .bm-button-i-div-2{
+                    position: absolute;
+                    height: 8%;
+                    width: 17%;
+                    top:61%;
+                    left: 31.5%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 1.2vw;
+                    cursor: pointer;
+                    overflow: hidden;
+                    // background-color: rgba(255, 0, 0, 0.329);
+
+                    .bm-bttn-txt{
+                        position: absolute;
+                        font-size: 1vw;
+                        width: 5%;
+                        left: 0;
+                    }
+
+                    .bm-money{
+                        // background-color: #d20a3f91;
+                        position: absolute;
+                        height: 600%;
+                        width: 70%;
+                        font-size: 2vw;
+                        right:-10%;
+                        color: #D20A3F;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        transform: translateY(45%);
+                        transition: 1.7s ease-out;
+                        .bm-m-s-money{
+                            position: relative;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            font-size: inherit;
+                            color: inherit;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .bm-button-i-div-3{
+                    position: absolute;
+                    height: 8%;
+                    width: 13%;
+                    top:61%;
+                    left: 51.5%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 1.2vw;
+                    cursor: pointer;
+                    overflow: hidden;
+                    // background-color: rgba(255, 0, 0, 0.329);
+
+                    .bm-bttn-txt{
+                        position: absolute;
+                        font-size: 1vw;
+                        width: 10%;
+                        left: 0;
+                    }
+
+                    .bm-money{
+                        // background-color: #d20a3f5b;
+                        position: absolute;
+                        height: 600%;
+                        width: 50%;
+                        font-size: 2vw;
+                        right:-11%;
+                        color: #D20A3F;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        transform: translateY(45%);
+                        transition: 1.7s ease-out;
+                        .bm-m-s-money{
+                            position: relative;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            font-size: inherit;
+                            color: inherit;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            .bm-main-div-2{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                transition: all 2s ease-in-out;
+                .bm-button-i-div{
+                    position: absolute;
+                    height: 8%;
+                    width: 10%;
+                    top:61%;
+                    left: 12%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 1.2vw;
+                    cursor: pointer;
+
+                    overflow: hidden;
+                    // background-color: rgba(255, 0, 0, 0.329);
+
+                    .bm-bttn-txt{
+                        position: absolute;
+                        font-size: 1vw;
+                        width: 10%;
+                        left: 0;
+                    }
+
+                    .bm-money{
+                        position: absolute;
+                        height: 600%;
+                        font-size: 2vw;
+                        right:0;
+                        color: #D20A3F;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        transform: translateY(45%);
+                        transition: 1.7s ease-out;
+                        // background-color: rgba(255, 0, 0, 0.26);
+                        .bm-m-s-money{
+                            position: relative;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            font-size: inherit;
+                            color: inherit;
+                            font-weight: 500;
+                        }
+
+                    }
+                }
+                .bm-button-i-div-2{
+                    position: absolute;
+                    height: 8%;
+                    width: 17%;
+                    top:61%;
+                    left: 31.5%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 1.2vw;
+                    cursor: pointer;
+                    overflow: hidden;
+                    // background-color: rgba(255, 0, 0, 0.329);
+
+                    .bm-bttn-txt{
+                        position: absolute;
+                        font-size: 1vw;
+                        width: 10%;
+                        left: 0;
+                    }
+
+                    .bm-money{
+                        position: absolute;
+                        height: 600%;
+                        width: 70%;
+                        font-size: 2vw;
+                        right:-10%;
+                        color: #D20A3F;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        transform: translateY(45%);
+                        transition: 1.7s ease-out;
+                        .bm-m-s-money{
+                            position: relative;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            font-size: inherit;
+                            color: inherit;
+                            font-weight: 500;
+                        }
+
+                    }
+                }
+                .bm-button-i-div-3{
+                    position: absolute;
+                    height: 8%;
+                    width: 13%;
+                    top:61%;
+                    left: 51.5%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 1.2vw;
+                    cursor: pointer;
+                    overflow: hidden;
+                    // background-color: rgba(255, 0, 0, 0.329);
+
+                    .bm-bttn-txt{
+                        position: absolute;
+                        font-size: 1vw;
+                        width: 10%;
+                        left: 0;
+                    }
+
+                    .bm-money{
+                       // background-color: #d20a3f5b;
+                       position: absolute;
+                       height: 600%;
+                       width: 50%;
+                       font-size: 2vw;
+                       right:-11%;
+                       color: #D20A3F;
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: space-between;
+                       transform: translateY(45%);
+                       transition: 1.7s ease-out;
+                       .bm-m-s-money{
+                           position: relative;
+                           display: flex;
+                           justify-content: flex-start;
+                           align-items: center;
+                           font-size: inherit;
+                           color: inherit;
+                           font-weight: 500;
+                       }
+
+                    }
+                }
+            }
+            .bm-main-div-3{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                transition: all 2s ease-in-out;
+                .bm-button-i-div{
+                    position: absolute;
+                    height: 8%;
+                    width: 10%;
+                    top:61%;
+                    left: 12%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 1.2vw;
+                    cursor: pointer;
+
+                    overflow: hidden;
+                    // background-color: rgba(255, 0, 0, 0.329);
+
+                    .bm-bttn-txt{
+                        position: absolute;
+                        font-size: 1vw;
+                        width: 10%;
+                        left: 0;
+                    }
+
+                    .bm-money{
+                        position: absolute;
+                        height: 600%;
+                        font-size: 2vw;
+                        right:0;
+                        color: #D20A3F;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        transform: translateY(45%);
+                        transition: 1.7s ease-out;
+                        // background-color: rgba(255, 0, 0, 0.26);
+                        .bm-m-s-money{
+                            position: relative;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            font-size: inherit;
+                            color: inherit;
+                            font-weight: 500;
+                        }
+
+                    }
+                }
+                .bm-button-i-div-2{
+                    position: absolute;
+                    height: 8%;
+                    width: 17%;
+                    top:61%;
+                    left: 31.5%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 1.2vw;
+                    cursor: pointer;
+                    overflow: hidden;
+                    // background-color: rgba(255, 0, 0, 0.329);
+
+                    .bm-bttn-txt{
+                        position: absolute;
+                        font-size: 1vw;
+                        width: 10%;
+                        left: 0;
+                    }
+
+                    .bm-money{
+                        position: absolute;
+                        height: 600%;
+                        width: 70%;
+                        font-size: 2vw;
+                        right:-10%;
+                        color: #D20A3F;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        transform: translateY(45%);
+                        transition: 1.7s ease-out;
+                        .bm-m-s-money{
+                            position: relative;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            font-size: inherit;
+                            color: inherit;
+                            font-weight: 500;
+                        }
+
+                    }
+                }
+                .bm-button-i-div-3{
+                    position: absolute;
+                    height: 8%;
+                    width: 13%;
+                    top:61%;
+                    left: 51.5%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 1.2vw;
+                    cursor: pointer;
+                    overflow: hidden;
+                    // background-color: rgba(255, 0, 0, 0.329);
+
+                    .bm-bttn-txt{
+                        position: absolute;
+                        font-size: 1vw;
+                        width: 10%;
+                        left: 0;
+                    }
+
+                    .bm-money{
+                        // background-color: #d20a3f5b;
+                        position: absolute;
+                        height: 600%;
+                        width: 50%;
+                        font-size: 2vw;
+                        right:-11%;
+                        color: #D20A3F;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        transform: translateY(45%);
+                        transition: 1.7s ease-out;
+                        .bm-m-s-money{
+                            position: relative;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            font-size: inherit;
+                            color: inherit;
+                            font-weight: 500;
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+
+
+

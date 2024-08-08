@@ -1,0 +1,115 @@
+.Usp{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Helvetica Neue";
+
+    .usp-main-img{
+        position: absolute;
+        height: 140%;
+        width: auto;
+    }
+
+    .usp-heading{
+        position: absolute;
+        height: 20%;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 1;
+        font-size: 5vw;
+        top:5%;
+        left:8%;
+    }
+
+    
+    
+    
+
+    .Tilt1 {
+        width: 23vw;
+        height: 65vh;
+        margin: 0 auto;
+        // border: 1px solid #ccc;
+        overflow: hidden;
+        position: absolute;
+        z-index: 2;
+        left:10%;
+        top:30%;
+        // background-color: gray;s
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.5vw;
+        scale: 1;
+        transition: 0.2s;
+        .usp-main-img-1{
+            position: absolute;
+            height: 100%;
+            width: auto;
+            // left:8%;
+            // bottom: 5%;
+            transition: all 1s ease-out;
+        }
+    }
+
+    .Tilt2 {
+        width: 23vw;
+        height: 65vh;
+        margin: 0 auto;
+        // border: 1px solid #ccc;
+        overflow: hidden;
+        position: absolute;
+        z-index: 2;
+        left:40%;
+        top:18%;
+        // background-color: gray;s
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.5vw;
+        scale: 1;
+        transition: 0.2s;
+        .usp-main-img-2{
+            position: absolute;
+            height: 100%;
+            width: auto;
+            left:1%;
+            // bottom: 20%;
+            transition: all 1s ease-out;
+        }
+    }
+
+    .Tilt3 {
+        width: 23vw;
+        height: 65vh;
+        margin: 0 auto;
+        // border: 1px solid #ccc;
+        overflow: hidden;
+        position: absolute;
+        z-index: 2;
+        left:70%;
+        top:30%;
+        // background-color: gray;s
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border-radius: 1.5vw;
+        scale: 1;
+        transition: 0.2s;
+        .usp-main-img-3{
+            position: absolute;
+            height: 100%;
+            width: auto;
+            // right:5%;
+            // bottom: 5%;
+            transition: all 1s ease-out;
+        }
+    }
+}
